@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useReducer } from 'react';
+import MenuBar from './components/MenuBar';
+import SearchBar from './components/SearchBar';
+
+
+// import AppContext from './todoAppContext';
+import reducer from './todoAppReducer';
 
 function App() {
+  const initialAppState = {
+    items: [],
+    query: ''
+  }
+  const [store, dispatch] = useReducer(reducer, initialAppState);
+
+  useEffect(function () {
+    setTimeout(function () {
+      const items_from_backend = [
+        { id: 1, title: 'Pay Bills', complete: true },
+        { id: 2, title: '@vue/cli vs create-react-app', complete: false },
+        { id: 3, title: 'vue-router vs react-router', complete: false },
+        { id: 4, title: 'redux vs vuex', complete: false },
+        { id: 5, title: 'learn FBM Platform', complete: false },
+      ];
+
+      dispatch({
+        type: 'init',
+        payload: {
+          items: items_from_backend,
+          query: ''
+        }
+      });
+
+    }, 300);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <MenuBar />
+      <SearchBar />
+
     </div>
   );
 }

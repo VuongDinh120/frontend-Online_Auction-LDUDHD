@@ -1,13 +1,102 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: #333;
+  font-family: Lato, sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a:link{
+  text-decoration: none;
+  color: #333 !important;
+}
+
+a:hover {
+  color: #d70022 !important;
+}
+
+
+.top-header {
+  border-bottom: 1px solid rgba(221, 221, 221, .49);
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.contact-header {
+  display: block;
+  visibility: visible;
+}
+
+.menu-search {
+  box-shadow: 0 0 25px rgba(0,0,0,.1);
+  border-radius: 30px;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.search-form-product {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.navbar-header {
+  float: left;
+}
+
+.menu-search select.form-control1 {
+  background: 0 0;
+  outline: 0;
+  border: 0;
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #606060;
+}
+
+.menu-search input.search-field {
+  border: 0;
+      border-left-color: currentcolor;
+      border-left-style: none;
+      border-left-width: 0px;
+  outline: 0;
+  border-left: .5px solid #ddd;
+  background: 0 0;
+  line-height: 40px;
+  padding: 0;
+      padding-left: 0px;
+  padding-left: 24px;
+  height: 42px;
+  color: #606060;
+  width: 40%;
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 100%;
+}
+
+.menu-search .btn.btn-primary {
+  background: #484848;
+  float: right;
+  line-height: 40px;
+  padding: 0;
+      padding-right: 0px;
+      padding-left: 0px;
+  border-radius: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 43px;
+  position: relative;
+  box-shadow: none;
+  outline: 0;
+  transition: all 250ms ease;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
 }
