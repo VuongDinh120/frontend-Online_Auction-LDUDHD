@@ -1,6 +1,9 @@
 import { useEffect, useReducer } from 'react';
 import MenuBar from './components/MenuBar';
 import SearchBar from './components/SearchBar';
+import ItemBox from './components/ItemBox';
+import Home from './pages/Home';
+
 
 
 // import AppContext from './todoAppContext';
@@ -35,10 +38,10 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="page">
       <MenuBar />
       <SearchBar />
-
+      <Home />
     </div>
   );
 }

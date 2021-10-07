@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 // import AppContext from '../todoAppContext';
 
-export default function MenuBar() {
+export default function NavBar() {
 
     return (
-        <div className="top-header" >
+        <div className="bottom-header" >
             <div className="container">
                 <div className="row">
                     <div className="col-md-9 col-sm-8 contact-header">
