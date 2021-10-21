@@ -1,7 +1,7 @@
 import { useEffect, useReducer } from 'react';
 import MenuBar from './components/MenuBar';
 import SearchBar from './components/SearchBar';
-import ItemBox from './components/ItemBox';
+import CateBar from './components/CateBar';
 import Home from './pages/Home';
 
 
@@ -41,6 +41,7 @@ function App() {
     <div className="page">
       <MenuBar />
       <SearchBar />
+      <CateBar />
       <Home />
     </div>
   );

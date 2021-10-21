@@ -130,3 +130,104 @@ option .level-1{
   color: #333;
 
 }
+/*Categories bar*/
+.catebar {
+  overflow: hidden;
+  background-color: #d70022;
+}
+
+#homebtn {
+  text-decoration: none !important;
+  color: #ffff !important;
+}
+
+/* Links inside the catbar */
+.catebar a {
+  float: left;
+  color: #ffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.cate-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.cate-dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #ffff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.catebar a:hover, .cate-dropdown:hover .dropbtn , #homebtn:hover{
+  background-color: #ffff;
+  color: #d70022 !important;
+}
+
+/* Dropdown content (hidden by default) */
+.cate-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffff ;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Show the dropdown menu on hover */
+.cate-dropdown:hover .cate-dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.cate-column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background-color: #ffff;
+  height: 150px;
+}
+
+.cate-column .cate-0-item {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.cate-column .cate-0-item:hover {
+  color: #d70022;
+  background-color: #ffff;
+}
+
+/* Style links inside the columns */
+.cate-column a {
+  float: none;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.cate-column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.cate-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
