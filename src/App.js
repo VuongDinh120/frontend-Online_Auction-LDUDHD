@@ -1,8 +1,13 @@
 import { useEffect, useReducer } from 'react';
-import MenuBar from './components/MenuBar';
-import SearchBar from './components/SearchBar';
-import CateBar from './components/CateBar';
+import MenuBar from './components/Menu/MenuBar';
+import SearchBar from './components/Menu/SearchBar';
+import CateBar from './components/Menu/CateBar';
 import Home from './pages/Home';
+import CatItemList from './pages/CatItemList';
+import ItemDetail from './pages/ItemDetail';
+
+
+
 
 
 
@@ -42,7 +47,10 @@ function App() {
       <MenuBar />
       <SearchBar />
       <CateBar />
-      <Home />
+      {/* <Home /> */}
+      {/* <CatItemList /> */}
+      <ItemDetail />
+
     </div>
   );
 }

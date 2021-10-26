@@ -10,10 +10,10 @@ code {
 }
 
 a {
-  color: #333!important;
+  color: #333 !important;
 }
 
-a:link{
+a:link {
   text-decoration: none;
   color: #333 !important;
 }
@@ -21,7 +21,6 @@ a:link{
 a:hover {
   color: #d70022 !important;
 }
-
 
 .top-header {
   border-bottom: 1px solid rgba(221, 221, 221, .49);
@@ -37,7 +36,7 @@ a:hover {
 }
 
 .menu-search {
-  box-shadow: 0 0 25px rgba(0,0,0,.1);
+  box-shadow: 0 0 25px rgba(0, 0, 0, .1);
   border-radius: 30px;
   font-size: 12px;
   overflow: hidden;
@@ -52,7 +51,7 @@ a:hover {
   float: left;
 }
 
-.menu-search{
+.menu-search {
   overflow: auto;
 }
 
@@ -111,25 +110,26 @@ a:hover {
   color: #fff;
 }
 
-option .level-1{
+option .level-1 {
   padding-left: 50px;
 }
 
-.item-box{
-  margin: 20px 20px 20px 0px;
-  display:inline-block;
+.item-box {
+  margin: 20px 10px 20px 10px;
+  display: inline-block;
 }
 
-.item-detail{
+.item-detail {
   text-align: center;
   color: #606060;
 }
 
-.item-detail .item-name{
-  font-size: 18px;
+.item-detail .item-name {
+  font-size: 17px;
   color: #333;
 
 }
+
 /*Categories bar*/
 .catebar {
   overflow: hidden;
@@ -164,12 +164,16 @@ option .level-1{
   color: #ffff;
   padding: 14px 16px;
   background-color: inherit;
-  font: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
-.catebar a:hover, .cate-dropdown:hover .dropbtn , #homebtn:hover{
+.catebar a:hover,
+.cate-dropdown:hover .dropbtn,
+#homebtn:hover {
   background-color: #ffff;
   color: #d70022 !important;
 }
@@ -178,10 +182,10 @@ option .level-1{
 .cate-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffff ;
+  background-color: #ffff;
   width: 100%;
   left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -230,4 +234,49 @@ option .level-1{
   content: "";
   display: table;
   clear: both;
+}
+
+
+/*Page general design*/
+.content-page {
+  margin-top: 150px;
+}
+
+/*sider bar design  */
+.ant_layout {
+  background-color: #ffff !important;
+}
+
+.sider-wrapper {
+  padding-right: 100px;
+}
+
+.site-card-border-less-wrapper {
+  padding-top: 20px;
+}
+
+.ClassPriceAuctionDetail {
+  border: 0;
+  color: #b41712;
+  font-weight: 700;
+  float: right;
+  padding-right: 10px;
+}
+
+.products-wrapper {
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 30%);
+}
+
+.products-wrapper .detail-container {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.price-product span {
+  padding-left: 20px;
+}
+
+.detail-container .action-product {
+  margin-top: 20px;
 }
